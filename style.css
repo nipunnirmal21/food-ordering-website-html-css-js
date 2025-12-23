@@ -14,3 +14,11 @@
     --hint-yellow:FCF1CC;
     --pure-white:FFF;
 }
+body{
+    background-color: var(--eye-ball);
+}
+
+/* Basic style */
+
+
+/* headr styling */
