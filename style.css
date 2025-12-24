@@ -25,6 +25,11 @@ a{
     color: var(--lead);
 }
 
+.flex{ 
+    display: flex;
+    align-items: center;
+}
+
 /* headr styling */
 
 /* section styleign */
