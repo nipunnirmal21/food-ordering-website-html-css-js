@@ -29,6 +29,8 @@ a{
     display: flex;
     align-items: center;
 }
+li{
+    list-style: none;}
 
 /* headr styling */
 
