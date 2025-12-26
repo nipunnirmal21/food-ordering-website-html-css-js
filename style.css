@@ -32,7 +32,9 @@ a{
 li{
     list-style: none;
 }
-
+.between{
+    justify-content: space-between;
+}
 /* headr styling */
 
 /* section styleign */
