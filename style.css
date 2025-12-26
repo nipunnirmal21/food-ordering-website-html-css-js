@@ -35,6 +35,9 @@ li{
 .between{
     justify-content: space-between;
 }
+.gap-3{
+    gap: 3rem;
+}
 /* headr styling */
 
 /* section styleign */
