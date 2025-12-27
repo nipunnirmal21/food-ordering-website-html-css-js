@@ -39,6 +39,9 @@ li{
     gap: 3rem;
 }
 /* headr styling */
+.navbar{
+    min-height: 14vh;                    
+}
 
 /* section styleign */
 
