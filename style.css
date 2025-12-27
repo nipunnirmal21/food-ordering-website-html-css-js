@@ -8,58 +8,83 @@
 }
 
 :root{
-    --lead:#212121;
-    --gold-finger:#F3BD12;
-    --eye-ball:#FFFDF7;
-    --hint-yellow:FCF1CC;
-    --pure-white:FFF;
+    --lead: #212121;
+    --gold-finger: #F3BD12;
+    --eye-ball: #FFFDF7;
+    --hint-yellow: #FCF1CC; /* # ලකුණ එකතු කළා */
+    --pure-white: #FFF;     /* # ලකුණ එකතු කළා */
 }
+
 body{
     background-color: var(--eye-ball);
 }
 
 /* Basic style */
 a{
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-decoration: none;
     color: var(--lead);
+    font-weight: 600; /* අකුරු ටිකක් මහත කළා */
 }
 
 .flex{ 
     display: flex;
     align-items: center;
 }
+
 li{
     list-style: none;
 }
+
 .between{
     justify-content: space-between;
 }
+
 .gap-3{
-    gap: 3rem;
+    gap: 3rem; /* Links අතර පරතරය */
 }
+
+.gap-2{
+    gap: 1.5rem; /* Icon සහ Button අතර පරතරය */
+}
+
+.gap-1{
+    gap: 0.5rem; /* Sign in සහ Icon එක අතර පරතරය */
+}
+
 .wrapper{
     max-width: 1400px;
-
+    margin: 0 auto; /* මේකෙන් තමයි මුළු content එකම මැදට ගන්නේ */
+    padding: 0 20px; /* දෙපැත්තට ඉඩක් තැබීමට */
 }
-/* headr styling */
+
+/* Header styling */
+.navbar{
+    min-height: 10vh; /* උස තරමක් අඩු කළා */
+}
+
 .navlist{
     display: flex;
     align-items: center;
-    gap: 1rem;
 }
-.navbar{
-    min-height: 14vh;                    
-}
+
 .logo{
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: 800;
     color: var(--gold-finger);
 }
-/* section styleign */
 
-/* footer styling  */
+.desktop-action {
+    display: flex;
+    align-items: center;
+}
 
+/* Cart Icon styling adjustments */
+.cart-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
 
 
