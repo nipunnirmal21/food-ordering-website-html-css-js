@@ -11,8 +11,8 @@
     --lead: #212121;
     --gold-finger: #F3BD12;
     --eye-ball: #FFFDF7;
-    --hint-yellow: #FCF1CC; /* # ලකුණ එකතු කළා */
-    --pure-white: #FFF;     /* # ලකුණ එකතු කළා */
+    --hint-yellow: #FCF1CC; 
+    --pure-white: #FFF;     
 }
 
 body{
@@ -24,7 +24,7 @@ a{
     font-size: 1rem;
     text-decoration: none;
     color: var(--lead);
-    font-weight: 600; /* අකුරු ටිකක් මහත කළා */
+    font-weight: 600; 
 }
 
 .flex{ 
@@ -41,26 +41,26 @@ li{
 }
 
 .gap-3{
-    gap: 3rem; /* Links අතර පරතරය */
+    gap: 3rem; 
 }
 
 .gap-2{
-    gap: 1.5rem; /* Icon සහ Button අතර පරතරය */
+    gap: 1.5rem; 
 }
 
 .gap-1{
-    gap: 0.5rem; /* Sign in සහ Icon එක අතර පරතරය */
+    gap: 0.5rem;
 }
 
 .wrapper{
     max-width: 1400px;
-    margin: 0 auto; /* මේකෙන් තමයි මුළු content එකම මැදට ගන්නේ */
-    padding: 0 20px; /* දෙපැත්තට ඉඩක් තැබීමට */
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
 /* Header styling */
 .navbar{
-    min-height: 10vh; /* උස තරමක් අඩු කළා */
+    min-height: 10vh; 
 }
 
 .navlist{
