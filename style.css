@@ -38,7 +38,16 @@ li{
 .gap-3{
     gap: 3rem;
 }
+.wrapper{
+    max-width: 1400px;
+    background: gold;
+}
 /* headr styling */
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 .navbar{
     min-height: 14vh;                    
 }
