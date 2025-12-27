@@ -40,7 +40,7 @@ li{
 }
 .wrapper{
     max-width: 1400px;
-    background: gold;
+
 }
 /* headr styling */
 .navlist{
@@ -51,7 +51,11 @@ li{
 .navbar{
     min-height: 14vh;                    
 }
-
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold-finger);
+}
 /* section styleign */
 
 /* footer styling  */
