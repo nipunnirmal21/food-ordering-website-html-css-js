@@ -73,6 +73,14 @@ li{
     font-weight: 800;
     color: var(--gold-finger);
 }
+.btn{
+
+    display: inline-block;
+    padding: .9rem 2.5rem;
+    background: var(--gold-finger);
+    border-radius: 1rem;
+    font-size: 1.1rem;
+}
 
 .desktop-action {
     display: flex;
