@@ -82,6 +82,10 @@ li{
     font-size: 1.1rem;
     color: var(--pure-white);
     box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background: var(--lead);
 }
 
 .desktop-action {
