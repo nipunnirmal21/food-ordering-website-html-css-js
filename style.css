@@ -80,6 +80,8 @@ li{
     background: var(--gold-finger);
     border-radius: 1rem;
     font-size: 1.1rem;
+    color: var(--pure-white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
 }
 
 .desktop-action {
