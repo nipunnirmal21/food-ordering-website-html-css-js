@@ -138,4 +138,8 @@ li{
     .navlist , .desktop-action .btn{
         display: none;
     }
+
+    .desktop-action .hamburger{
+        display: block;
+    }
 }
