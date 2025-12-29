@@ -91,6 +91,7 @@ li{
 .cart-icon{
     color: var(--lead);
     font-size: 1.3rem;
+    position: relative;
 }
 
 .desktop-action {
