@@ -134,3 +134,8 @@ li{
 
 
 /* media queries */
+@media screen and (max-width: 780px){
+    .navlist , .desktop-action .btn{
+        display: none;
+    }
+}
