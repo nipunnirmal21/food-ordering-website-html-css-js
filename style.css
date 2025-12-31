@@ -150,5 +150,10 @@ li{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 2rem;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
