@@ -159,5 +159,6 @@ li{
         padding: 2rem;
         background: var(--pure-white);
         border: 1.rem solid var(--gold-finger);
+        border-radius: 2rem;
     }
 }
