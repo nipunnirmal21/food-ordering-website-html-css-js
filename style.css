@@ -155,5 +155,9 @@ li{
         top: 20%;
         left: 50%;
         transform: translate(-50%);
+        width: 20rem;
+        padding: 2rem;
+        background: var(--pure-white);
+        border: 1.rem solid var(--gold-finger);
     }
 }
