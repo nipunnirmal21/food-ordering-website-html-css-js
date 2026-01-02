@@ -165,4 +165,8 @@ li{
 
 
     }
+    .mobile-menu-active{
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
