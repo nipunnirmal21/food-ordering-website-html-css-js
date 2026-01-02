@@ -160,5 +160,9 @@ li{
         background: var(--pure-white);
         border: 1.rem solid var(--gold-finger);
         border-radius: 2rem;
+        box-shadow: 
+        rgba(0, 0, 0, 0.5) 8px 8px 8px,  rgba(0, 0, 0, 0.5) 8px 8px 8px inset
+
+
     }
 }
