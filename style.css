@@ -173,3 +173,8 @@ li{
 }
 
 /* section style */
+
+.hero-section{
+    background: gold;
+    min-height: calc(100vh -14vh);
+}
