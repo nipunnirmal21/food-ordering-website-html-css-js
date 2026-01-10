@@ -133,7 +133,9 @@ img{
     display: none;
 }
 
-
+.hero-section{
+    min-height: calc(100vh-14vh);
+}
 
 
 
