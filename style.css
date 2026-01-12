@@ -1,27 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Miniver&family=Montserrat:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
+    /* රතු පාට border එක අයින් කළා design එක පිරිසිදුව පෙනෙන්න */
+    /* border: .1rem solid red; */
 }
 
 :root{
     --lead: #212121;
     --gold-finger: #F3BD12;
     --eye-ball: #FFFDF7;
-    --hint-yellow: #FCF1CC; 
     --pure-white: #FFF;     
 }
 
 body{
     background-color: var(--eye-ball);
+    overflow-x: hidden; /* තිරයෙන් පිටතට යාම වැළැක්වීමට */
 }
 
 /* Basic style */
 a{
-    font-size: 1rem;
     text-decoration: none;
     color: var(--lead);
     font-weight: 600; 
@@ -32,47 +33,30 @@ a{
     align-items: center;
 }
 
-li{
-    list-style: none;
-}
+li{ list-style: none; }
 
-.between{
-    justify-content: space-between;
-}
+.between{ justify-content: space-between; }
 
-
-.gap-3{
-    gap: 3rem; 
-}
-
-.gap-2{
-    gap: 2rem; 
-}
-
-.gap-1{
-    gap: 0.5rem;
-}
+.gap-3{ gap: 3rem; }
+.gap-2{ gap: 2rem; }
+.gap-1{ gap: 1rem; }
 
 .wrapper{
-    max-width: 1400px;
+    max-width: 1200px; /* Screen එකට ගැලපෙන ලෙස width එක හැදුවා */
     margin: 0 auto; 
     padding: 0 20px; 
 }
+
 img{
     max-width: 100%;
     height: auto;
-    margin: auto;
     display: block;
 }
 
 /* Header styling */
 .navbar{
     min-height: 10vh; 
-}
-
-.navlist{
-    display: flex;
-    align-items: center;
+    padding: 1rem 0;
 }
 
 .logo{
@@ -80,112 +64,163 @@ img{
     font-weight: 800;
     color: var(--gold-finger);
 }
-.btn{
+.logo span { color: var(--lead); } /* "Foodie" style */
 
+.navlist a {
+    transition: color 0.3s;
+}
+.navlist a:hover {
+    color: var(--gold-finger);
+}
+
+.btn{
     display: inline-block;
-    padding: .9rem 2.5rem;
+    padding: .8rem 2rem;
     background: var(--gold-finger);
-    border-radius: 1rem;
-    font-size: 1.1rem;
-    color: var(--pure-white);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    border-radius: 50px; /* Rounded button look */
+    font-size: 1rem;
+    color: var(--lead);
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: 0.3s ease-in-out;
+    border: 2px solid transparent;
 }
 .btn:hover{
-    background: var(--lead);
-}
-.cart-icon{
+    background: transparent;
+    border: 2px solid var(--gold-finger);
     color: var(--lead);
-    font-size: 1.3rem;
-    position: relative;
 }
 
-.desktop-action {
-    display: flex;
-    align-items: center;
-}
-
-/* Cart Icon styling adjustments */
+/* Cart Icon styling */
 .cart-icon {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    position: relative;
+    font-size: 1.2rem;
+    margin-right: 1rem;
 }
 .cart-icon .cart-value {
     position: absolute;
-    top: 50%;
+    top: -8px;
     right: -10px;
-    font-size: .85rem;
-    width: 20px;
-    aspect-ratio: 1;
-    border-radius: var(--gold-finger);
+    font-size: 0.75rem;
+    width: 18px;
+    height: 18px;
+    background-color: var(--gold-finger);
+    border-radius: 50%;
     color: var(--lead);
-    text-align: center;
-    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
+
 .desktop-action .hamburger{
     font-size: 1.5rem;
     display: none;
+    cursor: pointer;
+}
+.mobile-menu{ display: none; }
 
 
-}
-.mobile-menu{
-    display: none;
-}
+/* --- HERO SECTION STYLING (ප්‍රධාන කොටස) --- */
 
 .hero-section{
-    min-height: calc(100vh-14vh);
+    min-height: 85vh; /* මුළු තිරයම ආවරණය වන පරිදි */
+    padding-top: 2rem;
 }
-.content,
-.image-container{
+
+.content {
     flex: 1;
+    padding-right: 2rem;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: var(--lead);
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.content h1 span {
+    color: var(--gold-finger); /* "Food" කහ පාටින් */
+}
+
+.content p {
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    max-width: 450px;
+}
+
+/* Social Icons */
+.social-icons .social-icon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--lead);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.social-icons .social-icon:hover {
+    background-color: var(--lead);
+    color: var(--pure-white);
+}
+
+/* Image Section & Yellow Background Shape */
+.image-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* පින්තූරය පිටුපස ඇති කහ හැඩය */
+.bg-shape {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    background-color: var(--gold-finger);
+    z-index: -1; /* පින්තුරයට පිටුපසින් තැබීමට */
+    border-radius: 40% 40% 50% 50% / 60% 60% 40% 40%; /* Custom shape */
+    bottom: 0;
+}
+
+.image-container img {
+    width: 80%; /* පින්තූරයේ ප්‍රමාණය පාලනය කිරීමට */
+    object-fit: contain;
 }
 
 
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 900px){
+    .hero-section {
+        flex-direction: column-reverse; /* Mobile එකේදී පින්තුරය උඩට */
+        text-align: center;
+        justify-content: center;
+    }
 
+    .content {
+        padding-right: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-
-
-
-/* media queries */
-@media screen and (max-width: 780px){
-    .navlist , .desktop-action .btn{
+    .navlist , .desktop-action .btn, .desktop-action .cart-icon {
         display: none;
     }
 
     .desktop-action .hamburger{
         display: block;
     }
-    .mobile-menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%);
-        width: 20rem;
-        padding: 2rem;
-        background: var(--pure-white);
-        border: 1.rem solid var(--gold-finger);
-        border-radius: 2rem;
-        box-shadow: 
-        rgba(0, 0, 0, 0.5) 8px 8px 8px,  rgba(0, 0, 0, 0.5) 8px 8px 8px inset;
-        transition: all .5s ease-in-out;
-
-
+    
+    .bg-shape {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
     }
-    .mobile-menu-active{
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-/* section style */
-
-.hero-section{
-    background: gold;
-    min-height: calc(100vh -14vh);
 }
