@@ -138,7 +138,7 @@ img{
 }
 .content,
 .image-container{
-    flex: 2;
+    flex: 1;
 }
 
 
